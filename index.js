@@ -2,12 +2,15 @@ let countEl = document.getElementById("count-el");
 let count = 0;
 
 function increment() {
-    count = count + 1;
+    count += 1;
     countEl.innerText = count;
 }
 
-let saveBtn = document.getDocumentById("save-btn");
+let saveBtn = document.getElementById("save-btn");
 
 function save() {
+    let saveEl = document.getElementById("save-el");
+    let newVar = count + " - ";
+    saveEl.innerText += newVar;
     console.log(count);
 }
