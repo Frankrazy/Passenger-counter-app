@@ -12,5 +12,6 @@ function save() {
     let saveEl = document.getElementById("save-el");
     let newVar = count + " - ";
     saveEl.textContent += newVar;
-    console.log(count);
+    countEl.textContent = 0;
+    count = 0;
 }
